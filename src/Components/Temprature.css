@@ -142,14 +142,16 @@
         height: 6vh;
         border: 1px solid black;
         border-left: none;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     .search .currentlocation{
+        font-size: 1.5rem;
         margin-top: 1vh;
     }
     .card{
         width: 100vw;
         border-radius: 0;
+        user-select: none;
     }
     .card .weathercondition{
         height: 25vh;
