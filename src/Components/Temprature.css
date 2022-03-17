@@ -134,12 +134,12 @@
         padding-left: 2vw;
         font-size: 1.1rem;
         font-weight: 400;
-        height: 7vh;
+        height: 6vh;
         border-right: none;
     }
     .search button{
         width: 30vw;
-        height: 7vh;
+        height: 6vh;
         border: 1px solid black;
         border-left: none;
     }
@@ -154,7 +154,7 @@
         height: 25vh;
     }
     .card .weathercondition i{
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .card .weatherdetails{
         height: 23vh;
@@ -166,7 +166,7 @@
     }
     .card .weatherdetails .second{
         width: 33vw;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .card .weatherdetails .third{
         width: 34vw;
