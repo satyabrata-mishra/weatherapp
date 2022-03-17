@@ -46,20 +46,23 @@ export default function Temprature() {
                 "mintemp": data.main.temp_min,
                 "maxtemp": data.main.temp_max,
             });
-            if (details.weather === "Smoke" || details.weather === "Haze" || details.weather === "Mist") {
+            if (data.weather[0].main === "Smoke" || data.weather[0].main === "Haze" || data.weather[0].main === "Mist") {
                 setWeather("fas fa-smog");
             }
-             if (details.weather === "Clouds") {
+            else if (data.weather[0].main === "Clouds") {
                 setWeather("fas fa-cloud-sun");
             }
-             if (details.weather === "Clear") {
+            else if (data.weather[0].main === "Clear") {
                 setWeather("fas fa-sun");
             }
-            else if (details.weather === "Thunderstrom") {
+            else if (data.weather[0].main === "Thunderstrom") {
                 setWeather("fas fa-poo-storm");
             }
-            else if (details.weather === "Rain") {
+            else if (data.weather[0].main === "Rain") {
                 setWeather("fas fa-cloud-showers-heavy");
+            }
+            else{
+                console.log(details.weather+"No Weather Found");
             }
             setLoader(false);
         } catch (error) {
