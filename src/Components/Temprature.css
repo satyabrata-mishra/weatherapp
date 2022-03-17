@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+.search{
+    display: flex;
+    width: 30vw;
+}
+.search input{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    border-right:none ;
+    outline: none;
+    height: 5vh;
+    width: 23vw;
+    background-color: white;
+}
+.search button{
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    border: 1px solid black;
+    border-left: none;
+    height: 5vh;
+    width: 7vw;
+    background-color: rgb(7, 121, 167);
+    color: white;
+    cursor: pointer;
+}
+.search .currentlocation{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    color: red;
+}
+.search .currentlocation :hover{
+    color: blue;
+}
+.card{
+    margin-top: 10vh;
+    border-radius: 20px;
+    box-shadow: 0 0 40px grey;
+    overflow: hidden;
+    user-select: none;
+}
+.card .weathercondition{
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .weathercondition i{
+    font-size: 6rem;
+}
+.card .weatherdetails{
+    height: 23vh;
+    background-color: aqua;
+    display: flex;
+}
+.card .weatherdetails .first{
+    width: 16.7vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 3.3rem;
+    font-family: 'Lato', sans-serif;
+}
+.card .weatherdetails .second{
+    width: 16.7vw;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.card .weatherdetails .third{
+    width: 16.7vw;
+    background-color: skyblue;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.card .moredeatils{
+    display: flex;
+    height: 13vh;
+}
+.card .moredeatils .firstmore{
+    width: 6.26vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.card .moredeatils .firstmore p{
+    font-size: 0.8rem;
+}
+.card .moredeatils .firstmore i{
+    font-size: 2.1rem;
+    color: blue;
+}
+@media only screen and (max-width:600px) {
+    .body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .search{
+        width: 100vw;
+    }
+    .search input{
+        width: 70vw;
+        border: 1px solid black;
+        padding-left: 2vw;
+        font-size: 1.1rem;
+        font-weight: 400;
+        height: 7vh;
+        border-right: none;
+    }
+    .search button{
+        width: 30vw;
+        height: 7vh;
+        border: 1px solid black;
+        border-left: none;
+    }
+    .search .currentlocation{
+        margin-top: 1vh;
+    }
+    .card{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .card .weathercondition{
+        height: 25vh;
+    }
+    .card .weathercondition i{
+        font-size: 5rem;
+    }
+    .card .weatherdetails{
+        height: 23vh;
+        width: 100vw;
+    }
+    .card .weatherdetails .first{
+        width: 33vw;
+        font-size: 2.2rem;
+    }
+    .card .weatherdetails .second{
+        width: 33vw;
+        font-size: 1.1rem;
+    }
+    .card .weatherdetails .third{
+        width: 34vw;
+        font-size: 1.3rem;
+    }
+    .card .moredeatils {
+        width: 100vw;
+    }
+    .card .moredeatils .firstmore{
+        width: 12.5vw;
+    }
+    .card .moredeatils .firstmore p{
+        font-size: 0.65rem;
+    }
+    .card .moredeatils .firstmore i{
+        font-size: 1.6rem;
+    }
+}

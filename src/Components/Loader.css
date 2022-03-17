@@ -1,0 +1,12 @@
+.loader img{
+    margin-top: 2vh;
+    margin-bottom: -5vh;
+    height: 3vh;
+    width: 5vw;
+}
+@media only screen and (max-width:600px) {
+    .loader img{
+        height: 3vh;
+        width: 11vw;
+    }
+}
