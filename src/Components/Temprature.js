@@ -6,9 +6,9 @@ export default function Temprature() {
     const [weather, setWeather] = useState("fas fa-sun");
     const [details, setDetails] = useState({});
     const [loader, setLoader] = useState(false);
-    useEffect((a) => {
-        a.citycall();
-     }, [city])
+    useEffect(() => {
+     citycall();
+     }, [])
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=286c8bfc649981f6d4054271445699d3&units=metric`;
     function getLocation() {
         setLoader(true);
