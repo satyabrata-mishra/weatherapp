@@ -68,8 +68,8 @@ export default function Temprature() {
             }
             setLoader(false);
         } catch (error) {
-            setLoader(false);
             alert("City Not Found!!!");
+            setLoader(false);
         }
     }
     return (
