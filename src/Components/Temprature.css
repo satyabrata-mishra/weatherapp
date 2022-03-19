@@ -53,7 +53,7 @@
     border-radius: 20px;
     box-shadow: 0 0 40px grey;
     overflow: hidden;
-    /* user-select: none; */
+    user-select: none;
 }
 .card .weathercondition{
     background-color: white;
@@ -145,7 +145,7 @@
         font-size: 1.1rem;
     }
     .search .currentlocation{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 1vh;
     }
     .card{
@@ -173,7 +173,7 @@
     }
     .card .weatherdetails .third{
         width: 34vw;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .card .moredeatils {
         width: 100vw;
