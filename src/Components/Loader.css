@@ -7,6 +7,6 @@
 @media only screen and (max-width:600px) {
     .loader img{
         height: 3vh;
-        width: 15vw;
+        width: 20vw;
     }
 }

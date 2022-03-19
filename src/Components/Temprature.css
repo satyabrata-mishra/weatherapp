@@ -144,8 +144,8 @@
         border-left: none;
         font-size: 1.1rem;
     }
-    .search .currentlocation{
-        font-size: 2rem;
+    .search .currentlocation i{
+        font-size: 1.2rem;
         margin-top: 1vh;
     }
     .card{
